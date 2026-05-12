@@ -1,0 +1,210 @@
+@define-color bg_glass rgba(28, 28, 30, 0.15);
+@define-color fg_main  #ffffff;
+@define-color fg_dim   rgba(255, 255, 255, 0.45);
+@define-color apple_red #ff3b30;
+@define-color apple_green #32d74b;
+@define-color apple_orange #ff9500;
+@define-color apple_blue #0a84ff;
+
+* {
+    font-family: "Z003",  "Symbols Nerd Font";
+    font-size: 13px;
+    font-weight: 400;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+}
+
+
+window#waybar {
+    background: @bg_glass;
+    color: @fg_main;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Apple logo / power button */
+#custom-power {
+    font-size: 20px;
+    padding: 0 12px 0 16px;
+    color: @fg_main;
+    font-family: "SF Pro Display", sans-serif;
+}
+
+#custom-power:hover {
+    color: @fg_dim;
+    transition: all 0.2s ease;
+}
+
+/* Tags - like macOS spaces dots */
+#tags button {
+    color: @fg_dim;
+    padding: 0 8px;
+    font-size: 13px;
+    transition: all 0.15s ease;
+    border-radius: 6px;
+    margin: 4px 1px;
+    min-width: 24px;
+}
+
+#tags button.focused {
+    color: @fg_main;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 6px;
+}
+
+#tags button.occupied {
+    color: @fg_main;
+}
+
+#tags button.urgent {
+    color: @apple_red;
+    font-weight: 600;
+}
+
+#tags button:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: @fg_main;
+}
+
+/* Layout indicator - subtle */
+#window.layout {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 8px;
+    color: @fg_dim;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 5px;
+    margin: 8px 0 8px -4px;
+}
+
+
+/* Clock - dead center, macOS style */
+#clock {
+    font-size: 13px;
+    font-weight: 500;
+    color: @fg_main;
+    padding: 0 8px;
+    letter-spacing: 0.3px;
+}  /* ← ✅ ADD THIS CLOSING BRACE */
+
+/* CPU - matches existing module style */
+#cpu {
+    padding: 0 10px;
+    color: @fg_main;
+    font-size: 13px;
+}
+
+#cpu:hover {
+    color: @fg_dim;
+    transition: all 0.2s ease;
+}
+
+/* Memory - consistent with other system modules */
+#memory {
+    padding: 0 10px;
+    color: @fg_main;
+    font-size: 13px;
+}
+
+#memory:hover {
+    color: @fg_dim;
+    transition: all 0.2s ease;
+}
+
+/* Temperature - with critical state coloring */
+#temperature {
+    padding: 0 10px;
+    color: @fg_main;
+    font-size: 13px;
+}
+
+#temperature.critical {
+    color: @apple_red;
+    font-weight: 600;
+}
+
+#temperature:hover {
+    color: @fg_dim;
+    transition: all 0.2s ease;
+}
+
+/* Disk - subtle and clean */
+#disk {
+    padding: 0 10px;
+    color: @fg_main;
+    font-size: 13px;
+}
+
+#disk:hover {
+    color: @fg_dim;
+    transition: all 0.2s ease;
+}
+
+/* Optional: Add subtle spacing between right-side modules */
+#temperature, #memory, #cpu, #disk, #battery, #tray {
+    margin: 0 2px;
+}
+
+
+
+/* Taskbar icons */
+#taskbar {
+    padding: 0 4px;
+}
+
+#taskbar button {
+    padding: 2px 4px;
+    margin: 4px 1px;
+    border-radius: 6px;
+    transition: all 0.15s ease;
+    background: transparent;
+}
+
+#taskbar button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#taskbar button.active {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 6px;
+}
+
+/* Battery - clean Apple style */
+#battery {
+    padding: 0 10px;
+    color: @fg_main;
+    font-size: 13px;
+}
+
+#battery.charging {
+    color: @apple_green;
+}
+
+#battery.warning {
+    color: @apple_orange;
+}
+
+#battery.critical {
+    color: @apple_red;
+    font-weight: 600;
+}
+
+/* Tray */
+#tray {
+    padding: 0 8px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    color: @apple_red;
+}
+
+/* Smooth separator feel between modules */
+#battery, #tray, #clock {
+    color: @fg_main;
+}

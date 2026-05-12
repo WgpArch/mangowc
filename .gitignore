@@ -1,0 +1,12 @@
+# Wallpapers
+walls/
+*.png *.jpg *.jpeg *.webp
+
+# Backups
+*_bak *.bak
+
+# Weather settings (may contain API keys)
+*settings*.jsonc
+
+# OS cache
+.DS_Store

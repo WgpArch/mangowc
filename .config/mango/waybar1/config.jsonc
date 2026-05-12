@@ -1,0 +1,28 @@
+{ 
+  "modules-left": [
+    "custom/arch",
+    "ext/workspaces",
+    "mpris",
+    "dwl/window"
+  ],
+  "modules-center": [
+    "clock",
+    "custom/weather"
+],
+  "modules-right": [
+    "cpu",
+    "memory",
+    "temperature",
+    "battery",
+    "power-profiles-daemon",
+    //"pulseaudio",
+    "network#speed",
+    "network",
+    "custom/power",
+    "tray"
+  ],
+
+  "include": [
+		"~/.config/mango/waybar1/modules.json"
+	]
+}
