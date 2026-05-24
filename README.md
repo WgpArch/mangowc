@@ -28,3 +28,5 @@ Personal Mango compositor config with dual Waybar setups, weather module, and sc
     ├── scripts/          # Screenshot utilities
     ├── waybar/           # Primary Waybar config
     └── waybar1/          # Alternative Waybar + weather module
+
+## 📸 Screenshots
