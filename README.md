@@ -6,7 +6,7 @@ Personal Mango compositor config with dual Waybar setups, weather module, and sc
 ## 📁 Structure
 
 ~/.dotfiles/mangowc/
-└── .config/mango/
+└── configs/mango/
     ├── config.conf
     ├── Screenshot.sh
     ├── scripts/          # Screenshot utilities
