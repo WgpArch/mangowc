@@ -30,3 +30,6 @@ Personal Mango compositor config with dual Waybar setups, weather module, and sc
     └── waybar1/          # Alternative Waybar + weather module
 
 ## 📸 Screenshots
+
+![Screenshot 1](Mango_Screenshot_06-03-2026_20-17-03.png)
+![Screenshot 2](Mango_Wether_Screenshot_06-03-2026_20-19-43.png)
