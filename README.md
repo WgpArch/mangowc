@@ -1,33 +1,31 @@
+# MangoWC Dotfiles
+
 <div align="center">
 
-  <img src="https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white" alt="Arch Linux">
-  <img src="https://img.shields.io/badge/Wayland-00B4F0?style=for-the-badge&logo=wayland&logoColor=white" alt="Wayland">
-  <img src="https://img.shields.io/badge/MangoWC-FF6B6B?style=for-the-badge&logo=window-manager&logoColor=white" alt="MangoWC">
-  <img src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge" alt="License">
+[![View Documentation](https://img.shields.io/badge/View-Documentation-blue?style=for-the-badge)](https://wgparch.codeberg.page/mangowc/)
 
-  <br><br>
+<img src="https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white" alt="Arch Linux">
+<img src="https://img.shields.io/badge/Wayland-00B4F0?style=for-the-badge&logo=wayland&logoColor=white" alt="Wayland">
+<img src="https://img.shields.io/badge/MangoWC-FF6B6B?style=for-the-badge&logo=window-manager&logoColor=white" alt="MangoWC">
+<img src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge" alt="License">
 
-  Minimalist Mango Window Compositor on Arch Linux.
+<br><br>
+
+Minimalist Mango Window Compositor on Arch Linux.
 
 </div>
 
 ---
 
+## ✨ Features
+- **Dual Waybar:** Two Waybar setups featuring different workspace modules and weather widgets.
+- **Animations:** Highly customized slide and zoom animations.
+- **Blur & Shadows:** Custom blur parameters and drop shadows for floating windows.
+- **Layouts:** Tile, scroller, grid, deck, monocle, and more.
 
-cat > ~/.dotfiles/mangowc/README.md << 'EOF'
-# MangoWC Config for Arch Linux
+## 📖 Documentation & Installation
 
-Personal Mango compositor config with dual Waybar setups, weather module, and screenshot scripts.
-
-## 📁 Structure
-
-~/.dotfiles/mangowc/
-└── configs/mango/
-    ├── config.conf
-    ├── Screenshot.sh
-    ├── scripts/          # Screenshot utilities
-    ├── waybar/           # Primary Waybar config
-    └── waybar1/          # Alternative Waybar + weather module
+For full instructions, keybinds, and Waybar configuration, please visit the **[Official Documentation Website](https://wgparch.codeberg.page/mangowc/)**.
 
 ## 📸 Screenshots
 

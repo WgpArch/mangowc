@@ -1,0 +1,18 @@
+site_name: WgpArch MangoWC Config
+site_url: https://wgparch.codeberg.page/mangowc/
+theme:
+  name: material
+  palette:
+    primary: deep orange
+    accent: orange
+  features:
+    - navigation.tabs
+    - navigation.expand
+nav:
+  - Home: index.md
+  - Credits & Attribution: credits.md
+  - Installation: installation.md
+  - Keybinds: keybinds.md
+  - Waybar & Scripts: waybar.md
+  - Look & Feel: theming.md
+  - Gallery: gallery.md
